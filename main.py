@@ -11,7 +11,7 @@ def scrape_http():
     response_http_proxywizard = requests.get(url_http_proxywizard)
     http_proxies += [proxy.replace('http://', '') for proxy in response_http_proxywizard.text.split('\n') if proxy]
 
-    url_http_proxyscrape = 'https://api.proxyscrape.com/?request=getproxies&proxytype=http'
+    url_http_proxyscrape = 'https://api.proxyscrape.com/?request=getproxies&proxytype=http&timeout=200&country=all'
     response_http_proxyscrape = requests.get(url_http_proxyscrape)
     http_proxies += [proxy for proxy in response_http_proxyscrape.text.split('\n') if proxy]
 
@@ -68,7 +68,7 @@ def scrape_socks4():
     response_socks4_prxchk = requests.get(url_socks4_prxchk)
     socks4_proxies += [proxy for proxy in response_socks4_prxchk.text.split('\n')]
 
-    url_socks4_proxyscrape = 'https://api.proxyscrape.com/?request=getproxies&proxytype=socks4'
+    url_socks4_proxyscrape = 'https://api.proxyscrape.com/?request=getproxies&proxytype=socks4&timeout=350&country=all'
     response_socks4_proxyscrape = requests.get(url_socks4_proxyscrape)
     socks4_proxies += [proxy for proxy in response_socks4_proxyscrape.text.split('\n') if proxy]
 
@@ -97,7 +97,7 @@ def scrape_socks5():
     response_socks5_prxchk = requests.get(url_socks5_prxchk)
     socks5_proxies += [proxy for proxy in response_socks5_prxchk.text.split('\n')]
 
-    url_socks5_proxyscrape = 'https://api.proxyscrape.com/?request=getproxies&proxytype=socks5'
+    url_socks5_proxyscrape = 'https://api.proxyscrape.com/?request=getproxies&proxytype=socks5&country=all'
     response_socks5_proxyscrape = requests.get(url_socks5_proxyscrape)
     socks5_proxies += [proxy for proxy in response_socks5_proxyscrape.text.split('\n') if proxy]
 
