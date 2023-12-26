@@ -1,4 +1,5 @@
 # Proxy Leecher v1
+![License](https://img.shields.io/badge/license-MIT-blue)
 
 Proxy Leecher v1 is a Python-based proxy scraper that fetches HTTP, SOCKS4, and SOCKS5 proxies from various sources and updates the proxy lists for your use. It comes with a user-friendly GUI built using Tkinter. Scraping proxies from other proxy scrapers on GitHub offers several advantages. It allows you to access a diverse range of proxy sources, contributing to the collaborative open-source community. By leveraging well-maintained and regularly updated proxy scrapers, you save time and effort. Additionally, examining different proxy scraping techniques from existing scrapers provides valuable learning opportunities. This approach enhances your project's capabilities by incorporating proxy lists from specialized or unique sources. Access a wide variety of proxy sources and types by combining data from multiple scrapers. This diversity can enhance the effectiveness of your proxy pool.
 
