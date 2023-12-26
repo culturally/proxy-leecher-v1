@@ -14,11 +14,11 @@ Proxy Leecher v1 is a Python-based proxy scraper that fetches HTTP, SOCKS4, and 
    ```
 2. Install the required dependencies:
    ```bash
-   pip install requests pillow
+   pip install requests requests
    ```
 3. Run the script:
    ```bash
-   python proxy_leecher.py
+   python main.py
    ```
 
 ## Preview
